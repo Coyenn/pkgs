@@ -28,9 +28,10 @@
     aftman = pkgs.callPackage ./pkgs/aftman.nix {};
     tarmac = pkgs.callPackage ./pkgs/tarmac.nix {};
     asphalt = pkgs.callPackage ./pkgs/asphalt.nix {};
+    lune = pkgs.callPackage ./pkgs/lune.nix {};
   in {
     packages.${system} = {
-      inherit rokit wally rojo aftman tarmac asphalt;
+      inherit rokit wally rojo aftman tarmac asphalt lune;
     };
 
     devShells.${system}.default = pkgs.mkShell {
