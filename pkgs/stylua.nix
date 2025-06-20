@@ -1,0 +1,25 @@
+{
+  lib,
+  rustPlatform,
+  fetchFromGitHub,
+}:
+rustPlatform.buildRustPackage rec {
+  pname = "stylua";
+  version = "2.1.0";
+
+  src = fetchFromGitHub {
+    owner = "JohnnyMorganz";
+    repo = pname;
+    rev = "v${version}";
+    sha256 = "sha256-yVie8/aey77WbeUGM6rzuKBKLmAH1Jhhj9Y7LxbvIUw=";
+  };
+
+  cargoHash = "sha256-ow8lldu36qBHcXFgeBhHo2u+sSAFCEFbxUk2oZI7sj4=";
+
+  meta = {
+    description = "A Lua code formatter";
+    homepage = "https://github.com/JohnnyMorganz/StyLua";
+    license = lib.licenses.mpl20;
+    platforms = lib.platforms.all;
+  };
+}

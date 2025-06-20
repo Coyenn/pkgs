@@ -29,9 +29,11 @@
     tarmac = pkgs.callPackage ./pkgs/tarmac.nix {};
     asphalt = pkgs.callPackage ./pkgs/asphalt.nix {};
     lune = pkgs.callPackage ./pkgs/lune.nix {};
+    selene = pkgs.callPackage ./pkgs/selene.nix {};
+    stylua = pkgs.callPackage ./pkgs/stylua.nix {};
   in {
     packages.${system} = {
-      inherit rokit wally rojo aftman tarmac asphalt lune;
+      inherit rokit wally rojo aftman tarmac asphalt lune selene stylua;
     };
 
     devShells.${system}.default = pkgs.mkShell {
