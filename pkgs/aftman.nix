@@ -2,6 +2,7 @@
   lib,
   rustPlatform,
   fetchFromGitHub,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "aftman";
@@ -18,6 +19,8 @@ rustPlatform.buildRustPackage rec {
 
   # Aftman tests on main are literally broken
   doCheck = false;
+
+  passthru.updateScript = nix-update-script {};
 
   meta = {
     description = "Aftman is a command line toolchain manager";

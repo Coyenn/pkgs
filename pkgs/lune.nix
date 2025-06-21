@@ -2,6 +2,7 @@
   lib,
   rustPlatform,
   fetchFromGitHub,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "lune";
@@ -17,6 +18,8 @@ rustPlatform.buildRustPackage rec {
   cargoHash = "sha256-bp6Bg9i0fIi9eqtNd1BUGZ+R8AO/ZwDol98d4Ub+3iw=";
 
   doCheck = false;
+
+  passthru.updateScript = nix-update-script {};
 
   meta = {
     description = "A standalone Luau runtime";

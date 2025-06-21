@@ -2,6 +2,7 @@
   lib,
   rustPlatform,
   fetchFromGitHub,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "asphalt";
@@ -15,6 +16,8 @@ rustPlatform.buildRustPackage rec {
   };
 
   cargoHash = "sha256-+V9Avd5ruNrg671kvtIOPWQgTg7EPlK1zh84QwhWsbo=";
+
+  passthru.updateScript = nix-update-script {};
 
   meta = {
     description = "Upload and reference Roblox assets in code";

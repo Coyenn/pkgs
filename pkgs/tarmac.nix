@@ -4,6 +4,7 @@
   fetchFromGitHub,
   pkg-config,
   openssl,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "tarmac";
@@ -17,6 +18,8 @@ rustPlatform.buildRustPackage rec {
   };
 
   cargoHash = "sha256-u6EQLCdANSi1TBy2O1P5Ro5gJlfBjh/Xm7/uzCHtRu0=";
+
+  passthru.updateScript = nix-update-script {};
 
   buildInputs = [openssl];
 

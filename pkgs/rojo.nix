@@ -4,6 +4,7 @@
   fetchFromGitHub,
   stdenv,
   openssl,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "rojo";
@@ -18,6 +19,8 @@ rustPlatform.buildRustPackage rec {
   };
 
   cargoHash = "sha256-iWRjXC+JaBA/z2eOHiiqFFtS2gug5/hkIpYrPdHyux0=";
+
+  passthru.updateScript = nix-update-script {};
 
   buildInputs = [openssl];
 

@@ -2,6 +2,7 @@
   lib,
   rustPlatform,
   fetchFromGitHub,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "rokit";
@@ -15,6 +16,8 @@ rustPlatform.buildRustPackage rec {
   };
 
   cargoHash = "sha256-km14/9SCXUSzr4rhuhjXoUKfUBj8ULiP8XRcmp/N7Mg=";
+
+  passthru.updateScript = nix-update-script {};
 
   meta = {
     description = "Next-generation toolchain manager for Roblox projects";

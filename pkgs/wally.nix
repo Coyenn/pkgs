@@ -4,6 +4,7 @@
   fetchFromGitHub,
   openssl,
   pkg-config,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "wally";
@@ -18,6 +19,8 @@ rustPlatform.buildRustPackage rec {
   };
 
   cargoHash = "sha256-Zl69CPOHRcSdOfEajQ6n/eo6ZZbGgWQbnr1zE1HQ/Ok=";
+
+  passthru.updateScript = nix-update-script {};
 
   buildInputs = [openssl];
   nativeBuildInputs = [pkg-config];
