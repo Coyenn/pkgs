@@ -6,6 +6,5 @@
   "automerge": true,
   "automergeType": "branch",
   "automergeStrategy": "rebase",
-  "automergeComment": "Merged by Renovate",
-  "automergeBranchPrefix": "renovate/"
+  "automergeComment": "Merged by Renovate"
 }
