@@ -31,9 +31,10 @@
     lune = pkgs.callPackage ./pkgs/lune.nix {};
     selene = pkgs.callPackage ./pkgs/selene.nix {};
     stylua = pkgs.callPackage ./pkgs/stylua.nix {};
+    rostar = pkgs.callPackage ./pkgs/rostar.nix {};
   in {
     packages.${system} = {
-      inherit rokit wally rojo aftman tarmac asphalt lune selene stylua;
+      inherit rokit wally rojo aftman tarmac asphalt lune selene stylua rostar;
     };
 
     devShells.${system}.default = pkgs.mkShell {
