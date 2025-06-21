@@ -4,9 +4,12 @@ on:
   schedule:
     - cron: "0 0 * * 1" # Runs weekly on Monday
 jobs:
-  update-flake:
+  updateFlakePackages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: cachix/install-nix-action@v31
-      - uses: selfuryon/nix-update-action@v1
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+      - name: Update flake packages
+        uses: selfuryon/nix-update-action@v1.1.0
