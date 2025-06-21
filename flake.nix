@@ -33,9 +33,10 @@
     stylua = pkgs.callPackage ./pkgs/stylua.nix {};
     rostar = pkgs.callPackage ./pkgs/rostar.nix {};
     p = pkgs.callPackage ./pkgs/p.nix {};
+    moonwave = pkgs.callPackage ./pkgs/moonwave.nix {};
   in {
     packages.${system} = {
-      inherit rokit wally rojo aftman tarmac asphalt lune selene stylua rostar p;
+      inherit rokit wally rojo aftman tarmac asphalt lune selene stylua rostar p moonwave;
     };
 
     devShells.${system}.default = pkgs.mkShell {
