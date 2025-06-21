@@ -38,7 +38,7 @@
 
     devShells.${system}.default = pkgs.mkShell {
       inputsFrom = [];
-      packages = [];
+      packages = [pkgs.nix-update pkgs.jq];
     };
   };
 }

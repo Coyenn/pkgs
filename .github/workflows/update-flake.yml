@@ -8,8 +8,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Nix
         uses: cachix/install-nix-action@v31
       - name: Update flake packages
-        uses: selfuryon/nix-update-action@v1.1.0
+        run: nix develop .#default --command ./update.sh
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update packages"
+          branch: chore/nix-updates
+          delete-branch: true
+          title: "chore: update packages"
+          body: |
+            Automated changes by the nix-update GitHub Action.
+          labels: dependencies
