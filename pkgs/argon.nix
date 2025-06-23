@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "argon";
-  version = "2.0.18";
+  version = "2.0.24";
 
   src = fetchFromGitHub {
     owner = "argon-rbx";
     repo = pname;
-    rev = "v${version}";
-    sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    rev = "${version}";
+    sha256 = "sha256-2E9vyXTLCqW5zzCal9FjmV3LvLymjfUbzwZJB77FilU=";
   };
 
-  cargoHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  cargoHash = "sha256-j9aSnyc65CeBdgoFevdn1xpJHs4xWMhFDoRiPizceTI=";
 
   passthru.updateScript = nix-update-script {};
 
