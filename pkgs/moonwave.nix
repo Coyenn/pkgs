@@ -24,10 +24,11 @@ rustPlatform.buildRustPackage rec {
     mv $out/bin/moonwave-extractor $out/bin/moonwave
   '';
 
-  meta = {
+  meta = with lib; {
     description = "Moonwave is a tool for generating documentation from comments in Lua source code.";
     homepage = "https://github.com/evaera/moonwave";
-    license = lib.licenses.mit;
-    platforms = lib.platforms.all;
+    license = licenses.mit;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

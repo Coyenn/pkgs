@@ -26,10 +26,11 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script {};
 
-  meta = {
+  meta = with lib; {
     description = "A simple project management tool for the command line written in Rust";
     homepage = "https://github.com/RevisionOrg/p";
-    license = lib.licenses.mit;
-    platforms = lib.platforms.all;
+    license = licenses.mit;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

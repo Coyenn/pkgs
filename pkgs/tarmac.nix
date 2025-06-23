@@ -25,10 +25,11 @@ rustPlatform.buildRustPackage rec {
 
   nativeBuildInputs = [pkg-config];
 
-  meta = {
+  meta = with lib; {
     description = "Resource compiler and asset manager for Roblox projects";
     homepage = "https://github.com/Roblox/tarmac";
-    license = lib.licenses.mit;
-    platforms = lib.platforms.all;
+    license = licenses.mit;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

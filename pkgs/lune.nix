@@ -21,10 +21,11 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script {};
 
-  meta = {
+  meta = with lib; {
     description = "A standalone Luau runtime";
     homepage = "https://github.com/lune-org/lune";
-    license = lib.licenses.mpl20;
-    platforms = lib.platforms.all;
+    license = licenses.mpl20;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

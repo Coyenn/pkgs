@@ -19,10 +19,11 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script {};
 
-  meta = {
+  meta = with lib; {
     description = "A Lua code formatter";
     homepage = "https://github.com/JohnnyMorganz/StyLua";
-    license = lib.licenses.mpl20;
-    platforms = lib.platforms.all;
+    license = licenses.mpl20;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

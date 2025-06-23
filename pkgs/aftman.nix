@@ -22,10 +22,11 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script {};
 
-  meta = {
+  meta = with lib; {
     description = "Aftman is a command line toolchain manager";
     homepage = "https://github.com/LPGhatguy/aftman";
-    license = lib.licenses.mit;
-    platforms = lib.platforms.all;
+    license = licenses.mit;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

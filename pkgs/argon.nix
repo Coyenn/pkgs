@@ -5,23 +5,23 @@
   nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
-  pname = "asphalt";
-  version = "1.0.0-pre.11";
+  pname = "argon";
+  version = "2.0.18";
 
   src = fetchFromGitHub {
-    owner = "jackTabsCode";
+    owner = "argon-rbx";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-3Hl7bYUUKBSYR451UZONfzuA9jDn6MBu3uBJC/hV41I=";
+    sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
   };
 
-  cargoHash = "sha256-+V9Avd5ruNrg671kvtIOPWQgTg7EPlK1zh84QwhWsbo=";
+  cargoHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
 
   passthru.updateScript = nix-update-script {};
 
   meta = with lib; {
-    description = "Upload and reference Roblox assets in code";
-    homepage = "https://github.com/jackTabsCode/asphalt";
+    description = "Argon - Full featured tool for Roblox development";
+    homepage = "https://github.com/argon-rbx/argon";
     license = licenses.mit;
     maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;

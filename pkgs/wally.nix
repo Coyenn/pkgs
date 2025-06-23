@@ -25,10 +25,11 @@ rustPlatform.buildRustPackage rec {
   buildInputs = [openssl];
   nativeBuildInputs = [pkg-config];
 
-  meta = {
+  meta = with lib; {
     description = "Package manager for Roblox";
     homepage = "https://github.com/UpliftGames/wally";
-    license = lib.licenses.mpl20;
-    platforms = lib.platforms.all;
+    license = licenses.mpl20;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

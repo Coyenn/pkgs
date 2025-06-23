@@ -19,10 +19,11 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script {};
 
-  meta = {
+  meta = with lib; {
     description = "Next-generation toolchain manager for Roblox projects";
     homepage = "https://github.com/rojo-rbx/rokit";
-    license = lib.licenses.mit;
-    platforms = lib.platforms.all;
+    license = licenses.mit;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }

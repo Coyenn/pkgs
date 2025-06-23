@@ -27,10 +27,11 @@ rustPlatform.buildRustPackage rec {
   # tests flaky on darwin on hydra
   doCheck = !stdenv.hostPlatform.isDarwin;
 
-  meta = {
+  meta = with lib; {
     description = "Enables professional-grade development tools for Roblox developers";
     homepage = "https://rojo.space";
-    license = lib.licenses.mpl20;
-    platforms = lib.platforms.all;
+    license = licenses.mpl20;
+    maintainers = ["Tim Ritter <hi@tim.cv>"];
+    platforms = platforms.all;
   };
 }
