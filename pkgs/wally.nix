@@ -29,7 +29,6 @@ rustPlatform.buildRustPackage rec {
     description = "Package manager for Roblox";
     homepage = "https://github.com/UpliftGames/wally";
     license = licenses.mpl20;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

@@ -23,7 +23,6 @@ buildNpmPackage rec {
     description = "Dead simple fully managed Rojo helper for Roblox projects";
     homepage = "https://github.com/tacheometry/Rostar";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
     mainProgram = "rostar";
   };

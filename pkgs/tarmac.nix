@@ -29,7 +29,6 @@ rustPlatform.buildRustPackage rec {
     description = "Resource compiler and asset manager for Roblox projects";
     homepage = "https://github.com/Roblox/tarmac";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

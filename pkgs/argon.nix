@@ -23,7 +23,6 @@ rustPlatform.buildRustPackage rec {
     description = "Argon - Full featured tool for Roblox development";
     homepage = "https://github.com/argon-rbx/argon";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

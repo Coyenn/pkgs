@@ -31,7 +31,6 @@ rustPlatform.buildRustPackage rec {
     description = "Enables professional-grade development tools for Roblox developers";
     homepage = "https://rojo.space";
     license = licenses.mpl20;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

@@ -23,7 +23,6 @@ rustPlatform.buildRustPackage rec {
     description = "Next-generation toolchain manager for Roblox projects";
     homepage = "https://github.com/rojo-rbx/rokit";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

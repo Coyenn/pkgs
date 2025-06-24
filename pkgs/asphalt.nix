@@ -23,7 +23,6 @@ rustPlatform.buildRustPackage rec {
     description = "Upload and reference Roblox assets in code";
     homepage = "https://github.com/jackTabsCode/asphalt";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

@@ -28,7 +28,6 @@ rustPlatform.buildRustPackage rec {
     description = "Moonwave is a tool for generating documentation from comments in Lua source code.";
     homepage = "https://github.com/evaera/moonwave";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

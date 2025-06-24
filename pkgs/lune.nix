@@ -25,7 +25,6 @@ rustPlatform.buildRustPackage rec {
     description = "A standalone Luau runtime";
     homepage = "https://github.com/lune-org/lune";
     license = licenses.mpl20;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

@@ -30,7 +30,6 @@ rustPlatform.buildRustPackage rec {
     description = "A simple project management tool for the command line written in Rust";
     homepage = "https://github.com/RevisionOrg/p";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

@@ -26,7 +26,6 @@ rustPlatform.buildRustPackage rec {
     description = "Aftman is a command line toolchain manager";
     homepage = "https://github.com/LPGhatguy/aftman";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

@@ -23,7 +23,6 @@ rustPlatform.buildRustPackage rec {
     description = "A blazing-fast modern Lua linter written in Rust";
     homepage = "https://github.com/Kampfkarren/selene";
     license = licenses.mpl20;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

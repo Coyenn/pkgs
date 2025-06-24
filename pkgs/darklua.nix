@@ -23,7 +23,6 @@ rustPlatform.buildRustPackage rec {
     description = "A command line tool that transforms Lua 5.1 and Roblox Lua scripts using rules";
     homepage = "https://github.com/seaofvoices/darklua";
     license = licenses.mit;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }

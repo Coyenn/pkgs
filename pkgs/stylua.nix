@@ -23,7 +23,6 @@ rustPlatform.buildRustPackage rec {
     description = "A Lua code formatter";
     homepage = "https://github.com/JohnnyMorganz/StyLua";
     license = licenses.mpl20;
-    maintainers = ["Tim Ritter <hi@tim.cv>"];
     platforms = platforms.all;
   };
 }
