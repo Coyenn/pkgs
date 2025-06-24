@@ -6,12 +6,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "aftman";
-  version = "0.3.0";
 
   src = fetchFromGitHub {
     owner = "LPGhatguy";
     repo = pname;
-    rev = "v${version}";
+    rev = "v0.3.0";
     sha256 = "sha256-wrSkfhmKlV2W3KaEazjPd4er7OSfpqWELHdSaDgX5n4=";
   };
 

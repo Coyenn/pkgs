@@ -8,12 +8,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "wally";
-  version = "0.3.2";
 
   src = fetchFromGitHub {
     owner = "UpliftGames";
     repo = pname;
-    rev = "v${version}";
+    rev = "v0.3.2";
     sha256 = "0h4dvbq6m40aijzlhciqqifa7i7ibx13cc7mnp56vhlnm27i9ccm";
     fetchSubmodules = true;
   };

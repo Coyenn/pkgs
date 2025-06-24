@@ -6,12 +6,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "rokit";
-  version = "1.0.0";
 
   src = fetchFromGitHub {
     owner = "rojo-rbx";
     repo = pname;
-    rev = "v${version}";
+    rev = "v1.0.0";
     sha256 = "sha256-cGsxfz3AT8W/EYk3QxVfZ8vd6zGNx1Gn6R1SWCYbVz0=";
   };
 

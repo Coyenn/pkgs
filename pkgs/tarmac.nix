@@ -8,12 +8,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "tarmac";
-  version = "0.8.2";
 
   src = fetchFromGitHub {
     owner = "Roblox";
     repo = pname;
-    rev = "v${version}";
+    rev = "v0.8.2";
     sha256 = "164gdkrx8qn72nj2a8736xky248ls9mwc8fr8dmgnr1kjq5is6aq";
   };
 

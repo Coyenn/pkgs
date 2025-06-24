@@ -6,12 +6,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "lune";
-  version = "0.9.4";
 
   src = fetchFromGitHub {
     owner = "lune-org";
     repo = pname;
-    rev = "v${version}";
+    rev = "v0.9.4";
     sha256 = "sha256-ZqlPImggZbvsUtq3BRGiDLzKsig3+odVx+yzUnpRTZw=";
   };
 

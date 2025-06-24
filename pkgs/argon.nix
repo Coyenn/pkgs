@@ -6,12 +6,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "argon";
-  version = "2.0.24";
 
   src = fetchFromGitHub {
     owner = "argon-rbx";
     repo = pname;
-    rev = "${version}";
+    rev = "v2.0.24";
     sha256 = "sha256-2E9vyXTLCqW5zzCal9FjmV3LvLymjfUbzwZJB77FilU=";
   };
 

@@ -6,12 +6,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "moonwave";
-  version = "1.3.0";
 
   src = fetchFromGitHub {
     owner = "evaera";
     repo = pname;
-    rev = "v${version}";
+    rev = "v1.3.0";
     sha256 = "sha256-XCNldIngk+u25NJ8Yn16hhynJ+5uWZM+GD9xww6QD5s=";
   };
 
