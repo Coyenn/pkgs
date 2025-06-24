@@ -6,11 +6,12 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "stylua";
+  version = "2.1.0";
 
   src = fetchFromGitHub {
     owner = "JohnnyMorganz";
     repo = pname;
-    rev = "v2.1.0";
+    rev = "v${version}";
     sha256 = "sha256-yVie8/aey77WbeUGM6rzuKBKLmAH1Jhhj9Y7LxbvIUw=";
   };
 

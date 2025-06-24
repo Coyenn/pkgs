@@ -8,11 +8,12 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "p";
+  version = "1.4.0";
 
   src = fetchFromGitHub {
     owner = "RevisionOrg";
     repo = pname;
-    rev = "v1.4.0";
+    rev = "v${version}";
     sha256 = "sha256-W8yOy+a3FWKofLA5mWOwhRTkIcGh2d7JoA0W10bRXEc=";
   };
 

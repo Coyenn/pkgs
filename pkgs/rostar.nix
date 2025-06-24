@@ -4,13 +4,14 @@
   fetchFromGitHub,
   nix-update-script,
 }:
-buildNpmPackage {
+buildNpmPackage rec {
   pname = "rostar";
+  version = "0.2.0";
 
   src = fetchFromGitHub {
     owner = "tacheometry";
     repo = "Rostar";
-    rev = "v0.2.0";
+    rev = version;
     sha256 = "sha256-svlpTSV/JkFdWhjYs5rYDlr+T9jDKvZhk9+CQnkYZ6Y=";
   };
 

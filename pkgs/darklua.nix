@@ -6,11 +6,12 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "darklua";
+  version = "0.16.0";
 
   src = fetchFromGitHub {
     owner = "seaofvoices";
     repo = pname;
-    rev = "v0.16.0";
+    rev = "v${version}";
     sha256 = "sha256-D83cLJ6voLvgZ51qLoCUzBG83VFB3Y7HxuaZHpaiOn4=";
   };
 

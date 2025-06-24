@@ -6,11 +6,12 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "asphalt";
+  version = "1.0.0-pre.11";
 
   src = fetchFromGitHub {
     owner = "jackTabsCode";
     repo = pname;
-    rev = "v1.0.0-pre.11";
+    rev = "v${version}";
     sha256 = "sha256-3Hl7bYUUKBSYR451UZONfzuA9jDn6MBu3uBJC/hV41I=";
   };
 
