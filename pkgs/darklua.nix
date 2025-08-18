@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "darklua";
-  version = "0.16.0";
+  version = "0.17.0";
 
   src = fetchFromGitHub {
     owner = "seaofvoices";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-D83cLJ6voLvgZ51qLoCUzBG83VFB3Y7HxuaZHpaiOn4=";
+    sha256 = "sha256-Ql3BHItFvfc2C3+/M7gxFJwValxNaBVVftm6+T5N4S8=";
   };
 
-  cargoHash = "sha256-DQkj4t+l6FJnJQ+g96CXypssbRzHbS6X9AOG0LGDclg=";
+  cargoHash = "sha256-eJObrfhZMfgWUAqeTgOSic4u5fG5Eopqmvojiq+b54o=";
 
   passthru.updateScript = nix-update-script {};
 
