@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "asphalt";
-  version = "1.0.0";
+  version = "1.1.0";
 
   src = fetchFromGitHub {
     owner = "jackTabsCode";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-Qv3luatCEbxbs2dvFlfvQ7foOR7mVgyr4+PFYnZFTyc=";
+    sha256 = "sha256-z8sJFpg5mob+mG8Y2yDwLJcd+02WE7KGk0VaRe4UVXg=";
   };
 
-  cargoHash = "sha256-bE7xgIgw+vgq7XJog/hor9f2khMNuL8AfIR8XyABQdM=";
+  cargoHash = "sha256-8uYDLqPOxasSWLaXZiXfbF3d/JX7q6z3B+CjI8efzmw=";
 
   passthru.updateScript = nix-update-script {};
 
