@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "rokit";
-  version = "1.1.1";
+  version = "1.2.0";
 
   src = fetchFromGitHub {
     owner = "rojo-rbx";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-N81GYmaXFrSJ1m7tH2jpi5S0V6dOdvkpDNNfqyfHnjY=";
+    sha256 = "sha256-7DVToKKq3omZOlLMIcthAS8PdvJ4zaKKDAU5HbDIEJc=";
   };
 
-  cargoHash = "sha256-bu3cuHsplfKcogA5HEdhcYGMZ6b4xf9NsnL9d8ESCe0=";
+  cargoHash = "sha256-117kiiZ3ELP6S7SpNHJUBqqCKkVucxjfSmtRE83Zm/8=";
 
   passthru.updateScript = nix-update-script {};
 
