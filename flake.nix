@@ -25,6 +25,12 @@
         rustc = pkgs.rust-bin.stable."1.79.0".default;
       };
 
+      # Nightly Rust for crates using unstable features (e.g., let_chains)
+      rustPlatform_nightly = pkgs.makeRustPlatform {
+        cargo = pkgs.rust-bin.nightly.latest.default;
+        rustc = pkgs.rust-bin.nightly.latest.default;
+      };
+
       # Automatically discover packages from pkgs/ directory
       packageFiles = builtins.readDir ./pkgs;
 
@@ -37,6 +43,7 @@
       # Special case packages that need custom arguments
       specialPackages = {
         wally = pkgs.callPackage ./pkgs/wally.nix {rustPlatform = rustPlatform_1_79;};
+        lune = pkgs.callPackage ./pkgs/lune.nix {rustPlatform = rustPlatform_nightly;};
       };
 
       # Generate packages automatically
