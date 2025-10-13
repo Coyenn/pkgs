@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "lune";
-  version = "0.10.2";
+  version = "0.10.3";
 
   src = fetchFromGitHub {
     owner = "lune-org";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-jaYasQDCTxcgN2aYTfrhB1ZWxBaAgwovGzYZBnpaxdw=";
+    sha256 = "sha256-YmKZjT7d0zQGos+/4XB6qsOrX8r5Pa8DeKDuUo1ViMk=";
   };
 
-  cargoHash = "sha256-vgnt76GyKYJhrnMqJNKj5YMXubDzSgsab07nd5Y8+qY=";
+  cargoHash = "sha256-cq7Sgq9f2XpVTgEOMfR/G7sTqcWLwuJBgG9U+h4IMWQ=";
 
   doCheck = false;
 
