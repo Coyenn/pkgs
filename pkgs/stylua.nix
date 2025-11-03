@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "stylua";
-  version = "2.3.0";
+  version = "2.3.1";
 
   src = fetchFromGitHub {
     owner = "JohnnyMorganz";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-iyZ30Gc32TQsQyMLwArfIRtM0NkbXkqmca46nI0526M=";
+    sha256 = "sha256-wpFp6K5O1Vb/yHq+Lm0235nbeOdOgBK0NrlVAthz12A=";
   };
 
-  cargoHash = "sha256-H50/e/XyFvXHhwrKUbKZFZwSHfwAkAtddEvFiOr5220=";
+  cargoHash = "sha256-+llL9WoKnrXJjlaPNqdN4jGPjSHz2EuI2V44fghF5aM=";
 
   passthru.updateScript = nix-update-script {};
 
