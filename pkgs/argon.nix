@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
   doCheck = false;
 
   meta = with lib; {
-    description = "Argon - Full featured tool for Roblox development";
+    description = "Fully featured tool for Roblox development";
     homepage = "https://github.com/argon-rbx/argon";
     license = licenses.mit;
     platforms = platforms.all;
