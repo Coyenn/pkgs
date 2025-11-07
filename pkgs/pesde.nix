@@ -9,7 +9,7 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "pesde";
-  version = "0.7.1";
+  version = "0.7.1+registry.0.2.3";
 
   src = fetchFromGitHub {
     owner = "pesde-pkg";
