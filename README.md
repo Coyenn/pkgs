@@ -13,7 +13,7 @@ This repository contains Nix package definitions for various tools and utilities
 | lune | 0.10.4 | A standalone Luau runtime | [https://github.com/lune-org/lune](https://github.com/lune-org/lune) |
 | moonwave | 1.3.0 | Moonwave is a tool for generating documentation from comments in Lua source code. | [https://github.com/evaera/moonwave](https://github.com/evaera/moonwave) |
 | p | 1.4.0 | A simple project management tool for the command line written in Rust | [https://github.com/RevisionOrg/p](https://github.com/RevisionOrg/p) |
-| pesde | 0.7.1 | A package manager for the Luau programming language, supporting multiple runtimes including Roblox and Lune | [https://github.com/pesde-pkg/pesde](https://github.com/pesde-pkg/pesde) |
+| pesde | 0.7.1+registry.0.2.3 | A package manager for the Luau programming language, supporting multiple runtimes including Roblox and Lune | [https://github.com/pesde-pkg/pesde](https://github.com/pesde-pkg/pesde) |
 | rojo | 7.6.1 | Enables professional-grade development tools for Roblox developers | [https://rojo.space](https://rojo.space) |
 | rokit | 1.2.0 | Next-generation toolchain manager for Roblox projects | [https://github.com/rojo-rbx/rokit](https://github.com/rojo-rbx/rokit) |
 | rostar | 0.2.0 | Dead simple fully managed Rojo helper for Roblox projects | [https://github.com/tacheometry/Rostar](https://github.com/tacheometry/Rostar) |
@@ -43,7 +43,11 @@ Then reference packages like:
 }
 ```
 
-### Binary Cache (Cachix)
+## Updating Packages
+
+Packages are automatically updated weekly via GitHub Actions. The README is automatically regenerated after each update.
+
+## Binary Cache (Cachix)
 
 To speed up package installation, enable the Cachix binary cache:
 
@@ -59,8 +63,4 @@ nix.settings = {
   trusted-public-keys = ["coyenn.cachix.org-1:8trB3cwK38eykwl00GomXg4eSRZaYDM/WMKqpusTVyE="];
 };
 ```
-
-## Updating Packages
-
-Packages are automatically updated weekly via GitHub Actions. The README is automatically regenerated after each update.
 
