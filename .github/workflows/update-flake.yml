@@ -32,7 +32,7 @@ jobs:
       - name: Build packages (push to Cachix)
         run: |
           # Build all packages - cachix-action will automatically push them
-          nix flake show --json | jq -r '.packages.x86_64-linux | keys[]' | while read pkg; do
+          nix flake show --json | jq -r '.packages["x86_64-linux"] | keys[]' | while read pkg; do
             nix build ".#packages.x86_64-linux.$pkg" --print-build-logs || true
           done
       - name: Create Pull Request
