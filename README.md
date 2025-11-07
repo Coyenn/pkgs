@@ -28,17 +28,17 @@ To use these packages, add this flake to your Nix configuration:
 
 ```nix
 {
-  inputs.rbx-pkgs-flake.url = "github:Coyenn/pkgs";
+  inputs.coyenn-pkgs-flake.url = "github:Coyenn/pkgs";
 }
 ```
 
 Then reference packages like:
 
 ```nix
-{ rbx-pkgs-flake, ... }: {
+{ coyenn-pkgs-flake, ... }: {
   environment.systemPackages = [
-    rbx-pkgs-flake.packages.${system}.pesde
-    rbx-pkgs-flake.packages.${system}.rojo
+    coyenn-pkgs-flake.packages.${system}.pesde
+    coyenn-pkgs-flake.packages.${system}.rojo
   ];
 }
 ```
