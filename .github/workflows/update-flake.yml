@@ -22,6 +22,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
       - name: Update flake packages
         run: nix develop .#default --command ./update.sh
+      - name: Update README
+        run: nix develop .#default --command ./update-readme.sh
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         id: cpr
