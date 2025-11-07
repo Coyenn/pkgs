@@ -75,6 +75,23 @@ Then reference packages like:
 ## Updating Packages
 
 Packages are automatically updated weekly via GitHub Actions. The README is automatically regenerated after each update.
+
+## Binary Cache (Cachix)
+
+To speed up package installation, enable the Cachix binary cache:
+
+\`\`\`bash
+nix shell nixpkgs#cachix -c cachix use coyenn
+\`\`\`
+
+Or add it to your Nix configuration:
+
+\`\`\`nix
+nix.settings = {
+  substituters = [\"https://coyenn.cachix.org\"];
+  trusted-public-keys = [\"coyenn.cachix.org-1:8trB3cwK38eykwl00GomXg4eSRZaYDM/WMKqpusTVyE=\"];
+};
+\`\`\`
 "
 
 # Write README

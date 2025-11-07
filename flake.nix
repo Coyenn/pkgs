@@ -7,6 +7,11 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
+  nixConfig = {
+    extra-substituters = ["https://coyenn.cachix.org"];
+    extra-trusted-public-keys = ["coyenn.cachix.org-1:8trB3cwK38eykwl00GomXg4eSRZaYDM/WMKqpusTVyE="];
+  };
+
   outputs = {
     self,
     nixpkgs,
