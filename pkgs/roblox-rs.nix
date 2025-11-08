@@ -6,7 +6,7 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "roblox-rs";
-  version = "0.0.0";
+  version = "0.0.1";
 
   src = fetchFromGitHub {
     owner = "roblox-rs";
