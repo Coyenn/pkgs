@@ -7,13 +7,16 @@ This repository contains Nix package definitions for various tools and utilities
 | Package Name | Version | Description | Homepage |
 |--------------|---------|-------------|----------|
 | aftman | 0.3.0 | Aftman is a command line toolchain manager | [https://github.com/LPGhatguy/aftman](https://github.com/LPGhatguy/aftman) |
-| argon | 2.0.26 | Argon - Full featured tool for Roblox development | [https://github.com/argon-rbx/argon](https://github.com/argon-rbx/argon) |
+| argon | 2.0.26 | Fully featured tool for Roblox development | [https://github.com/argon-rbx/argon](https://github.com/argon-rbx/argon) |
 | asphalt | 1.2.0 | Upload and reference Roblox assets in code | [https://github.com/jackTabsCode/asphalt](https://github.com/jackTabsCode/asphalt) |
 | darklua | 0.17.2 | A command line tool that transforms Lua 5.1 and Roblox Lua scripts using rules | [https://github.com/seaofvoices/darklua](https://github.com/seaofvoices/darklua) |
 | lune | 0.10.4 | A standalone Luau runtime | [https://github.com/lune-org/lune](https://github.com/lune-org/lune) |
+| mantle | 0.11.18 | An infrastructure-as-code and deployment tool for Roblox | [https://github.com/blake-mealey/mantle](https://github.com/blake-mealey/mantle) |
 | moonwave | 1.3.0 | Moonwave is a tool for generating documentation from comments in Lua source code. | [https://github.com/evaera/moonwave](https://github.com/evaera/moonwave) |
 | p | 1.4.0 | A simple project management tool for the command line written in Rust | [https://github.com/RevisionOrg/p](https://github.com/RevisionOrg/p) |
 | pesde | 0.7.1+registry.0.2.3 | A package manager for the Luau programming language, supporting multiple runtimes including Roblox and Lune | [https://github.com/pesde-pkg/pesde](https://github.com/pesde-pkg/pesde) |
+| rbxcloud | 0.17.0 | CLI and library for the Roblox Open Cloud API | [https://github.com/Sleitnick/rbxcloud](https://github.com/Sleitnick/rbxcloud) |
+| roblox-rs | 0.0.1 | Rust bindings for the Roblox standard library (CLI) | [https://github.com/roblox-rs/roblox-rs](https://github.com/roblox-rs/roblox-rs) |
 | rojo | 7.6.1 | Enables professional-grade development tools for Roblox developers | [https://rojo.space](https://rojo.space) |
 | rokit | 1.2.0 | Next-generation toolchain manager for Roblox projects | [https://github.com/rojo-rbx/rokit](https://github.com/rojo-rbx/rokit) |
 | rostar | 0.2.0 | Dead simple fully managed Rojo helper for Roblox projects | [https://github.com/tacheometry/Rostar](https://github.com/tacheometry/Rostar) |
