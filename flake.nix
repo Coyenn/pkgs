@@ -51,6 +51,7 @@
         lune = pkgs.callPackage ./pkgs/lune.nix {rustPlatform = rustPlatform_nightly;};
         asphalt = pkgs.callPackage ./pkgs/asphalt.nix {rustPlatform = rustPlatform_nightly;};
         mantle = pkgs.callPackage ./pkgs/mantle.nix {rustPlatform = rustPlatform_1_79;};
+        rojo = pkgs.callPackage ./pkgs/rojo.nix {rustPlatform = rustPlatform_nightly;};
       };
 
       # Generate packages automatically
