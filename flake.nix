@@ -50,6 +50,7 @@
         wally = pkgs.callPackage ./pkgs/wally.nix {rustPlatform = rustPlatform_1_79;};
         lune = pkgs.callPackage ./pkgs/lune.nix {rustPlatform = rustPlatform_nightly;};
         asphalt = pkgs.callPackage ./pkgs/asphalt.nix {rustPlatform = rustPlatform_nightly;};
+        mantle = pkgs.callPackage ./pkgs/mantle.nix {rustPlatform = rustPlatform_1_79;};
       };
 
       # Generate packages automatically
