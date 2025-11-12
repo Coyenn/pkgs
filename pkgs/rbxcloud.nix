@@ -13,8 +13,8 @@ rustPlatform.buildRustPackage rec {
   src = fetchFromGitHub {
     owner = "Sleitnick";
     repo = pname;
-    rev = "v${version}";
-    sha256 = "sha256-TBgfbuxe9JQ1g1hZiv+G6LuLQZO5qra14RF6iPL0ZDk=";
+    rev = "30e173373d87c1e80620f40f5e0904bb95a1ca66";
+    hash = "sha256-TBgfbuxe9JQ1g1hZiv+G6LuLQZO5qra14RF6iPL0ZDk=";
   };
 
   cargoHash = "sha256-lS5JuoeARE+v/EZ0FlC4IwTsHVPl8FwTZNeVrWTRNkE=";

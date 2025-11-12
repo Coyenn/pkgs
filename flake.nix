@@ -52,6 +52,7 @@
         asphalt = pkgs.callPackage ./pkgs/asphalt.nix {rustPlatform = rustPlatform_nightly;};
         mantle = pkgs.callPackage ./pkgs/mantle.nix {rustPlatform = rustPlatform_1_79;};
         rojo = pkgs.callPackage ./pkgs/rojo.nix {rustPlatform = rustPlatform_nightly;};
+        rokit = pkgs.callPackage ./pkgs/rokit.nix {rustPlatform = rustPlatform_nightly;};
       };
 
       # Generate packages automatically
