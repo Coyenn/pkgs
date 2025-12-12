@@ -36,7 +36,7 @@ jobs:
             nix build ".#packages.x86_64-linux.$pkg" --print-build-logs || true
           done
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         id: cpr
         with:
           token: ${{ secrets.PAT_FOR_CPR }}
