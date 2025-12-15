@@ -7,7 +7,7 @@ This repository contains Nix package definitions for various tools and utilities
 | Package Name | Version | Description | Homepage |
 |--------------|---------|-------------|----------|
 | aftman | 0.3.0 | Aftman is a command line toolchain manager | [https://github.com/LPGhatguy/aftman](https://github.com/LPGhatguy/aftman) |
-| argon | 2.0.26 | Fully featured tool for Roblox development | [https://github.com/argon-rbx/argon](https://github.com/argon-rbx/argon) |
+| argon | 2.0.27 | Fully featured tool for Roblox development | [https://github.com/argon-rbx/argon](https://github.com/argon-rbx/argon) |
 | asphalt | 1.2.0 | Upload and reference Roblox assets in code | [https://github.com/jackTabsCode/asphalt](https://github.com/jackTabsCode/asphalt) |
 | darklua | 0.17.3 | A command line tool that transforms Lua 5.1 and Roblox Lua scripts using rules | [https://github.com/seaofvoices/darklua](https://github.com/seaofvoices/darklua) |
 | lune | 0.10.4 | A standalone Luau runtime | [https://github.com/lune-org/lune](https://github.com/lune-org/lune) |
