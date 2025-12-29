@@ -9,16 +9,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "pesde";
-  version = "0.7.1+registry.0.2.3";
+  version = "0.7.2+registry.0.2.3";
 
   src = fetchFromGitHub {
     owner = "pesde-pkg";
     repo = pname;
-    rev = "v0.7.1+registry.0.2.3";
-    sha256 = "sha256-ad9ZDC7p2dsHEQHJltgBTgmy8Ew1tXk13isTDSumkZ4=";
+    rev = "v0.7.2+registry.0.2.3";
+    sha256 = "sha256-AZR9B4eMdPU4Ve1cCLCIEZvdjoP4HFnng4NcfA4NDhs=";
   };
 
-  cargoHash = "sha256-sdPGuEsdBt0TeEr7yqr5tROETLy/VG63n5+ulW72wzg=";
+  cargoHash = "sha256-1HcQdQqMcpePlO1WzPY4li+Kei9VDN4jfewPyAEDAWw=";
 
   cargoBuildFlags = ["--features" "bin"];
 
