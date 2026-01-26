@@ -20,7 +20,7 @@ This repository contains Nix package definitions for various tools and utilities
 | rojo | 7.6.1 | Enables professional-grade development tools for Roblox developers | [https://rojo.space](https://rojo.space) |
 | rokit | 1.2.0 | Next-generation toolchain manager for Roblox projects | [https://github.com/rojo-rbx/rokit](https://github.com/rojo-rbx/rokit) |
 | rostar | 0.2.0 | Dead simple fully managed Rojo helper for Roblox projects | [https://github.com/tacheometry/Rostar](https://github.com/tacheometry/Rostar) |
-| selene | 0.29.0 | A blazing-fast modern Lua linter written in Rust | [https://github.com/Kampfkarren/selene](https://github.com/Kampfkarren/selene) |
+| selene | 0.30.0 | A blazing-fast modern Lua linter written in Rust | [https://github.com/Kampfkarren/selene](https://github.com/Kampfkarren/selene) |
 | stylua | 2.3.1 | A Lua code formatter | [https://github.com/JohnnyMorganz/StyLua](https://github.com/JohnnyMorganz/StyLua) |
 | tarmac | 0.8.2 | Resource compiler and asset manager for Roblox projects | [https://github.com/Roblox/tarmac](https://github.com/Roblox/tarmac) |
 | wally | 0.3.2 | Package manager for Roblox | [https://github.com/UpliftGames/wally](https://github.com/UpliftGames/wally) |
